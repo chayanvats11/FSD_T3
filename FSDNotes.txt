@@ -1,0 +1,71 @@
+Middleware in context of Express ?
+
+Use [localhost:3000/](http://localhost:3000/)
+
+### What is a Module ?
+
+This is a single unit which can be said to be independent or self completed entity
+
+If there is error in one module then it does not affect the other module
+
+It can be plugged in with other module and loosely connected that is error in module A does Not affect Module B
+
+Loose coupling ?
+
+All function or classes should be loosely connected that is one function or class should not affect other modules
+
+Ques - Explain the working of http request response model ?
+
+Post and get request from server by user
+
+Post request - Request comes back as part of body
+
+Get request - It is part of url
+
+Data parsing : Extracting the important information from the post request and get request
+
+Data parsing from post request is called bodyParser
+
+For get request - req.query
+
+For post request - req.body
+
+## Writing Cleaner through making Custom Modules
+
+### Serving HTML Files
+
+Sending HTML files as response to the request from the user
+
+Raw Node.js 
+
+Global features third party module
+
+Event loop
+
+Express install third party module
+
+Creating server through routing
+
+Body parsing
+
+Serving html files through express js
+
+### Counter Dilemma
+
+Suppose we create a counter variable to count how many times a function is called
+
+We will do the same in js and encounter what the problems
+
+### How to make private variable in js
+
+Example is same as counter dilemma wala
+
+And remember the program of this
+
+x is now private variable of outer function and we can access it only using inner functions (as in oops member functions)
+
+And count is called outside for storing the how many times the x variable is incremented
+
+### Callback Hell or Pyramid of Doom
+
+Order is important in transaction suppose that we are going through a supply chain then we have tp perform the tasks in order and cannot skip the order of production to delivery
